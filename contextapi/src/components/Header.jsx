@@ -3,7 +3,8 @@ import Usercontext from '../context/Usercontext'
 
 
 const Header = ()=> {
-    const logo = useContext(Usercontext)
+    const {logo} = useContext(Usercontext)
+    // console.log(logo)
   return (
     <div className='flex justify-between p-4 items-center bg-blue-400 text-white'>
         <div className="logo text-3xl">{logo}</div>
